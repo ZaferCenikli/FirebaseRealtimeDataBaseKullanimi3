@@ -60,7 +60,7 @@ class MainActivity : AppCompatActivity(),androidx.appcompat.widget.SearchView.On
         menuInflater.inflate(R.menu.menu,menu)
         val item=menu?.findItem(R.id.ActionAra)
         val searchView=item?.actionView as androidx.appcompat.widget.SearchView
-        searchView.setOnQueryTextListener(this@MainActivity)
+        searchView.setOnQueryTextListener(this)
         return super.onCreateOptionsMenu(menu)
     }
 

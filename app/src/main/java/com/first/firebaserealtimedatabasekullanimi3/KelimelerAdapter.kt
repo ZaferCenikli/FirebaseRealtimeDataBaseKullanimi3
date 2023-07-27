@@ -48,10 +48,11 @@ class KelimelerAdapter(val context: Context, private val kelimeListe:List<Kelime
         holder.textViewingilizce.text=kelime.ingilizce
         holder.textViewturkce.text=kelime.turkce
         holder.kelime_card.setOnClickListener {
-          //  ıntent.putExtra("nesne",kelime)
-        //    context.startActivity(ıntent)
-            val ıntent=Intent(context,DetayActivity::class.java)
+            val ıntent=Intent(context,DetayActivity2::class.java)
             ıntent.putExtra("nesne",kelime)
+            context.startActivity(ıntent)
+
+            //ıntent.putExtra("nesne",kelime)
             context.startActivity(ıntent)
 
         }
